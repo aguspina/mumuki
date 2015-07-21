@@ -1,6 +1,7 @@
 class Submission < ActiveRecord::Base
   include WithTestRunning
   include WithStatus
+  include WithEarnedPoints
 
   extend WithAsyncAction
 
