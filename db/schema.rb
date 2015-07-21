@@ -108,6 +108,7 @@ ActiveRecord::Schema.define(version: 20150724062249) do
     t.text     "corollary"
     t.integer  "layout",            default: 0,    null: false
     t.text     "expectations"
+    t.integer  "max_points",        default: 10
   end
 
   add_index "exercises", ["author_id"], name: "index_exercises_on_author_id", using: :btree
