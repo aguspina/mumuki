@@ -26,4 +26,8 @@ module Status::Base
   def iconize
     group.iconize
   end
+
+  def earned_points(max_points, submissions_count)
+    0
+  end
 end
